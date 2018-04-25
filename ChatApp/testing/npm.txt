@@ -1,0 +1,16 @@
+Steps to use jasmine for unit testing
+
+--Instal jasmine as a dev only dependency
+npm install --save-dev jasmine
+
+--Initialize a jasmine spec (jasmine.json) by running
+./node_modules/.bin/jasmine init
+
+--Also need to specify jasmine in package.json to use jasmine test
+  "scripts": {
+    "test": "jasmine",
+    "start": "node server.js"
+  },
+
+--Then run all tests
+npm test
